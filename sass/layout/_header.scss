@@ -1,5 +1,10 @@
 .header {
+  display: grid;
+  place-items: center;
+
   &__nav {
+    max-width: 120rem;
+    width: 100%;
     padding: 3rem 10rem;
     display: flex;
     justify-content: space-between;

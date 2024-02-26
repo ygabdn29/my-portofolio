@@ -1,4 +1,11 @@
+.wrapper {
+  display: grid;
+  place-items: center;
+}
+
 .hero {
+  max-width: 120rem;
+  width: 100%;
   padding: 6rem 10rem;
   display: flex;
   gap: 2rem;
@@ -10,13 +17,13 @@
     align-items: center;
   }
 
-  &__illustration {
+  &__figure-illustration {
     width: auto;
     height: 40rem;
   }
 
   &__figure-caption {
-    font-size: 0.5rem;
+    font-size: 1rem;
     color: var(--clr-text-primary);
   }
 
@@ -63,5 +70,86 @@
   &__btn-github:active {
     // color: var(--clr-text-primary);
     background-color: var(--clr-btn-secondary);
+  }
+}
+.about-me {
+  max-width: 120rem;
+  width: 100%;
+  padding: 6rem 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: var(--clr-text-primary);
+
+  &__profile-summary {
+    font-weight: 500;
+    font-size: 2rem;
+  }
+
+  &__skill {
+    &-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    &-text {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+
+    &-list {
+      font-size: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    &-list-item {
+    }
+  }
+
+  &__experience {
+    &-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    &-text {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+
+    &-intern {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    &-description {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__education {
+    &-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    &-text {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+
+    &-description {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    &-year {
+      font-size: 1.5rem;
+    }
   }
 }
