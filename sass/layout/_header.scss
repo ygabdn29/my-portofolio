@@ -1,0 +1,30 @@
+.header {
+  &__nav {
+    padding: 3rem 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-list {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    &-list-item {
+    }
+
+    &-link:link,
+    &-link:visited {
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: var(--clr-text-primary);
+    }
+
+    &-link:hover,
+    &-link:active {
+      text-decoration: none;
+    }
+  }
+}
