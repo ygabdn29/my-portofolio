@@ -6,12 +6,15 @@
 // $clr--blue-gray: #6b728e;
 
 body {
-  --clr-main-bg: #ffffff;
+  --clr-main-bg: #f0f0f2;
   --clr-header-nav-bg: #d2e0fb;
   --clr-text-primary: #474e68;
   --clr-text-secondary: #ededf0;
   --clr-btn-primary: #5c5470;
   --clr-btn-secondary: #2e2a38;
+  --clr-link: #323749;
+  --clr-link-hover: #454756;
+  --clr-project-cards-bg: #d6d8eb;
 }
 
 body.theme-dark {
