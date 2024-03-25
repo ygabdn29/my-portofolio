@@ -54,7 +54,10 @@
             </div>
 
             <div class="hero__links-box">
-              <a href="https://github.com/ygabdn29" class="hero__btn-github"
+              <a
+                href="https://github.com/ygabdn29"
+                target="_blank"
+                class="hero__btn-github"
                 >Visit my Github</a
               >
             </div>
@@ -113,12 +116,56 @@
         <section class="projects">
           <h2 class="heading-secondary heading-center">Projects</h2>
 
-          <p class="projects__lead-in">
-            These are projects I have worked on before
-          </p>
+          <p class="projects__lead-in">These are projects I have done</p>
 
           <div class="projects__list-container">
-            <ul class="projects__list">
+            <ul class="projects__list grid-cols--2 md-grid-cols--1 mb-4">
+              <li class="projects__list-items">
+                <img
+                  src="./images/projects/entertainment-web-app.png"
+                  alt=""
+                  class="projects__project-image"
+                />
+
+                <div class="projects__details">
+                  <h3 class="projects__project-name">Entertainment Web App</h3>
+
+                  <a
+                    href="https://github.com/ygabdn29/entertaintment-web-app"
+                    target="_blank"
+                    class="projects__link"
+                    >Link to Github</a
+                  >
+
+                  <p class="projects__description">
+                    This is a solution for
+                    <a
+                      href="https://www.frontendmentor.io/challenges/entertainment-web-app-J-UhgAW1X"
+                      target="_blank"
+                      class="projects__challenge-link"
+                      >Entertainment Web App</a
+                    >
+                    from Frontend Mentor website.
+                  </p>
+
+                  <div class="projects__tech-container">
+                    <p class="projects__tech">
+                      Tech I use to create this project:
+                    </p>
+                    <ul class="projects__tech-list">
+                      <li class="projects__tech-list-items">HTML</li>
+                      <li class="projects__tech-list-items">Tailwind CSS</li>
+                      <li class="projects__tech-list-items">
+                        ReactJS using Typescript
+                      </li>
+                      <li class="projects__tech-list-items">
+                        React Router to handle routing
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
               <li class="projects__list-items">
                 <img
                   src="./images/projects/rest-countries.png"
@@ -166,7 +213,9 @@
                   </div>
                 </div>
               </li>
+            </ul>
 
+            <ul class="projects__list grid-cols--3 md-grid-cols--1">
               <li class="projects__list-items">
                 <img
                   src="./images/projects/url-shortening.png"

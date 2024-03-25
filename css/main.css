@@ -27,6 +27,18 @@ body.theme-dark {
   justify-content: space-between;
   align-items: center;
 }
+@media only screen and (max-width: 1200px) and (min-width: 760px) {
+  .header__nav {
+    max-width: 47.5rem;
+    padding: 3rem 5rem;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .header__nav {
+    max-width: 22.5rem;
+    padding: 2rem;
+  }
+}
 .header__nav-list {
   list-style: none;
   display: flex;
@@ -61,11 +73,21 @@ body {
   font-weight: 600;
   color: var(--clr-text-primary);
 }
+@media only screen and (max-width: 1200px) and (min-width: 760px) {
+  .heading-primary {
+    font-size: 2rem;
+  }
+}
 
 .heading-secondary {
   font-size: 2.5rem;
   color: var(--clr-text-primary);
   letter-spacing: 0.75;
+}
+@media only screen and (max-width: 1200px) and (min-width: 760px) {
+  .heading-secondary {
+    font-size: 1.5rem;
+  }
 }
 
 .heading-center {
@@ -77,6 +99,29 @@ body {
   place-items: center;
 }
 
+.grid-cols--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 760px) {
+  .md-grid-cols--1 {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .md-grid-cols--1 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.mb-4 {
+  margin-bottom: 4rem;
+}
+
 .hero {
   max-width: 120rem;
   width: 100%;
@@ -84,6 +129,19 @@ body {
   display: flex;
   justify-content: center;
   gap: 2rem;
+}
+@media only screen and (max-width: 1200px) and (min-width: 760px) {
+  .hero {
+    max-width: 47.5rem;
+    padding: 5rem;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .hero {
+    max-width: 22.5rem;
+    padding: 5rem 2rem;
+    flex-direction: column;
+  }
 }
 .hero__figure {
   display: flex;
@@ -95,9 +153,24 @@ body {
   width: auto;
   height: 40rem;
 }
+@media only screen and (max-width: 1200px) and (min-width: 760px) {
+  .hero__figure-illustration {
+    height: 20rem;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .hero__figure-illustration {
+    height: 15rem;
+  }
+}
 .hero__figure-caption {
   font-size: 1rem;
   color: var(--clr-text-primary);
+}
+@media only screen and (max-width: 1200px) and (min-width: 760px) {
+  .hero__figure-caption {
+    font-size: 0.75rem;
+  }
 }
 .hero__content-container {
   color: var(--clr-text-primary);
@@ -106,15 +179,31 @@ body {
   padding: 5rem 0;
   gap: 3rem;
 }
+@media only screen and (max-width: 760px) {
+  .hero__content-container {
+    padding: 0;
+    align-items: center;
+  }
+}
 .hero__text-box {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
+@media only screen and (max-width: 760px) {
+  .hero__text-box {
+    text-align: center;
+  }
+}
 .hero__occupation {
   font-size: 2rem;
   font-weight: 600;
   letter-spacing: 0.75;
+}
+@media only screen and (max-width: 1200px) and (min-width: 760px) {
+  .hero__occupation {
+    font-size: 1.5rem;
+  }
 }
 .hero__description {
   font-size: 1.5rem;
@@ -132,6 +221,12 @@ body {
   box-shadow: 0 0.625rem 1.25rem 0 rgba(120, 120, 120, 0.3);
   transition: all 0.3s;
 }
+@media only screen and (max-width: 1200px) and (min-width: 760px) {
+  .hero__btn-github:link, .hero__btn-github:visited {
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+  }
+}
 .hero__btn-github:hover, .hero__btn-github:active {
   background-color: var(--clr-btn-secondary);
 }
@@ -145,9 +240,31 @@ body {
   gap: 2rem;
   color: var(--clr-text-primary);
 }
+@media only screen and (max-width: 1200px) and (min-width: 760px) {
+  .about-me {
+    max-width: 47.5rem;
+    padding: 5rem;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .about-me {
+    max-width: 22.5rem;
+    padding: 5rem 2rem;
+  }
+}
 .about-me__profile-summary {
   font-weight: 500;
   font-size: 2rem;
+}
+@media only screen and (max-width: 1200px) and (min-width: 760px) {
+  .about-me__profile-summary {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .about-me__profile-summary {
+    text-align: center;
+  }
 }
 .about-me__skill-container {
   display: flex;
@@ -158,11 +275,21 @@ body {
   font-size: 2rem;
   font-weight: 500;
 }
+@media only screen and (max-width: 1200px) and (min-width: 760px) {
+  .about-me__skill-text {
+    font-size: 1.5rem;
+  }
+}
 .about-me__skill-list {
   font-size: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+@media only screen and (max-width: 1200px) and (min-width: 760px) {
+  .about-me__skill-list {
+    font-size: 1.25rem;
+  }
 }
 .about-me__experience-container {
   display: flex;
@@ -173,12 +300,27 @@ body {
   font-size: 2rem;
   font-weight: 500;
 }
+@media only screen and (max-width: 1200px) and (min-width: 760px) {
+  .about-me__experience-text {
+    font-size: 1.5rem;
+  }
+}
 .about-me__experience-intern {
   font-size: 1.5rem;
   font-weight: 500;
 }
+@media only screen and (max-width: 1200px) and (min-width: 760px) {
+  .about-me__experience-intern {
+    font-size: 1.25rem;
+  }
+}
 .about-me__experience-description {
   font-size: 1.5rem;
+}
+@media only screen and (max-width: 1200px) and (min-width: 760px) {
+  .about-me__experience-description {
+    font-size: 1.25rem;
+  }
 }
 .about-me__education-container {
   display: flex;
@@ -189,12 +331,27 @@ body {
   font-size: 2rem;
   font-weight: 500;
 }
+@media only screen and (max-width: 1200px) and (min-width: 760px) {
+  .about-me__education-text {
+    font-size: 1.5rem;
+  }
+}
 .about-me__education-description {
   font-size: 1.5rem;
   font-weight: 500;
 }
+@media only screen and (max-width: 1200px) and (min-width: 760px) {
+  .about-me__education-description {
+    font-size: 1.25rem;
+  }
+}
 .about-me__education-year {
   font-size: 1.5rem;
+}
+@media only screen and (max-width: 1200px) and (min-width: 760px) {
+  .about-me__education-year {
+    font-size: 1.25rem;
+  }
 }
 
 .projects {
@@ -206,15 +363,31 @@ body {
   gap: 2rem;
   color: var(--clr-text-primary);
 }
+@media only screen and (max-width: 1200px) and (min-width: 760px) {
+  .projects {
+    max-width: 47.5rem;
+    padding: 5rem;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .projects {
+    max-width: 22.5rem;
+    padding: 5rem 2rem;
+  }
+}
 .projects__lead-in {
   font-size: 2rem;
   font-weight: 500;
   text-align: center;
 }
+@media only screen and (max-width: 1200px) and (min-width: 760px) {
+  .projects__lead-in {
+    font-size: 1.5rem;
+  }
+}
 .projects__list {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 .projects__list-items {
@@ -231,7 +404,7 @@ body {
 }
 .projects__details {
   padding: 1rem 2rem 1.5rem 2rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 500;
   display: flex;
   flex-direction: column;

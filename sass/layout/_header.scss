@@ -10,6 +10,16 @@
     justify-content: space-between;
     align-items: center;
 
+    @media only screen and (max-width: 1200px) and (min-width: 760px) {
+      max-width: 47.5rem;
+      padding: 3rem 5rem;
+    }
+
+    @media only screen and (max-width: 760px) {
+      max-width: 22.5rem;
+      padding: 2rem;
+    }
+
     &-list {
       list-style: none;
       display: flex;
