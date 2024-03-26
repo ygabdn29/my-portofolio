@@ -44,6 +44,11 @@ body.theme-dark {
   display: flex;
   gap: 1rem;
 }
+@media only screen and (max-width: 760px) {
+  .header__nav-list {
+    display: none;
+  }
+}
 .header__nav-link:link, .header__nav-link:visited {
   text-decoration: none;
   font-size: 1.5rem;
@@ -182,6 +187,11 @@ body {
     font-size: 0.75rem;
   }
 }
+@media only screen and (max-width: 760px) {
+  .hero__figure-caption {
+    font-size: 0.625rem;
+  }
+}
 .hero__content-container {
   color: var(--clr-text-primary);
   display: flex;
@@ -274,6 +284,8 @@ body {
 @media only screen and (max-width: 760px) {
   .about-me__profile-summary {
     text-align: center;
+    font-size: 1.125rem;
+    line-height: 1.5;
   }
 }
 .about-me__skill-container {

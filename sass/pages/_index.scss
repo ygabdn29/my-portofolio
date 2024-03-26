@@ -79,6 +79,10 @@
     @media only screen and (max-width: 1200px) and (min-width: 760px) {
       font-size: 0.75rem;
     }
+
+    @media only screen and (max-width: 760px) {
+      font-size: 0.625rem;
+    }
   }
 
   &__content-container {
@@ -177,6 +181,8 @@
 
     @media only screen and (max-width: 760px) {
       text-align: center;
+      font-size: 1.125rem;
+      line-height: 1.5;
     }
   }
 
