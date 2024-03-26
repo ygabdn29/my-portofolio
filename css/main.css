@@ -436,6 +436,26 @@ body {
 .projects__project-name {
   font-size: 1.25rem;
 }
+.projects__link-container {
+  display: flex;
+  gap: 1rem;
+}
+@media only screen and (max-width: 1200px) and (min-width: 760px) {
+  .projects__link-container {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    align-items: stretch;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .projects__link-container {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    align-items: stretch;
+  }
+}
 .projects__link:link, .projects__link:visited {
   padding: 0.5rem 2rem;
   border-radius: 5px;

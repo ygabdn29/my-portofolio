@@ -310,9 +310,6 @@
     @media only screen and (max-width: 1200px) and (min-width: 760px) {
       font-size: 1.5rem;
     }
-
-    @media only screen and (max-width: 1200px) and (min-width: 760px) {
-    }
   }
 
   &__list {
@@ -349,6 +346,25 @@
   }
 
   &__link {
+    &-container {
+      display: flex;
+      gap: 1rem;
+
+      @media only screen and (max-width: 1200px) and (min-width: 760px) {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        align-items: stretch;
+      }
+
+      @media only screen and (max-width: 760px) {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        align-items: stretch;
+      }
+    }
+
     &:link,
     &:visited {
       padding: 0.5rem 2rem;
